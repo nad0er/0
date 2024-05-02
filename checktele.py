@@ -71,17 +71,27 @@ def gen_user(choice):
         else:
             pass
     if choice == "3":
-        c = d =random.choices(a)
-        d = random.choices(a)
-        s = random.choices(b)
-        f =  [c[0], d[0], s[0], s[0], s[0]]
-        username = ''.join(f)
+        c = str(''.join((random.choice(a) for i in range(1))))
+        d = str(''.join((random.choice(a) for i in range(1))))
+        s = str(''.join((random.choice(e) for i in range(1)))) 
+        f1 = c+_+d+_+d+_+d
+        f2 = c+_+d+_+c+_+c
+        f3 = c+_+c+_+d+_+c
+        f4 = c+_+c+_+c+_+d
+        f = f1,f2,f3,f4
+        f = random.choice(f)
+        username = f
         if username in banned[0]:
-            c = d =random.choices(a)
-            d = random.choices(a)
-            s = random.choices(b)
-            f =  [c[0], d[0], s[0], s[0], s[0]]
-            username = ''.join(f)
+            c = str(''.join((random.choice(a) for i in range(1))))
+            d = str(''.join((random.choice(a) for i in range(1))))
+            s = str(''.join((random.choice(e) for i in range(1)))) 
+            f1 = c+_+d+_+d+_+d
+            f2 = c+_+d+_+c+_+c
+            f3 = c+_+c+_+d+_+c
+            f4 = c+_+c+_+c+_+d
+            f = f1,f2,f3,f4
+            f = random.choice(f)
+            username = f
         else:
             pass
     if choice == "4":
