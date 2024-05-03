@@ -71,27 +71,23 @@ def gen_user(choice):
         else:
             pass
     if choice == "3":
-        c = str(''.join((random.choice(a) for i in range(1))))
-        d = str(''.join((random.choice(a) for i in range(1))))
-        s = str(''.join((random.choice(e) for i in range(1)))) 
-        f1 = [c[0], "_", d[0], "_", d[0], "_", d[0]]
-        f2 = [c[0], "_", d[0], "_", c[0], "_", c[0]]
-        f3 = [c[0], "_", c[0], "_", d[0], "_", c[0]]
-        f4 = [c[0], "_", c[0], "_", c[0], "_", d[0]]
-        f = f1,f2,f3,f4
-        f = random.choice(f)
-        username = f
+        c = d = random.choices(a)
+        d = random.choices(e)
+        f = [c[0], "_", d[0], "_", d[0], "_", d[0]]
+        f = [c[0], "_", d[0], "_", c[0], "_", c[0]]        
+        f = [c[0], "_", c[0], "_", d[0], "_", c[0]]
+        f = [c[0], "_", c[0], "_", c[0], "_", d[0]]               
+        random.shuffle(f)
+        username = ''.join(f)
         if username in banned[0]:
-            c = str(''.join((random.choice(a) for i in range(1))))
-            d = str(''.join((random.choice(a) for i in range(1))))
-            s = str(''.join((random.choice(e) for i in range(1)))) 
-            f1 = [c[0], "_", d[0], "_", d[0], "_", d[0]]
-            f2 = [c[0], "_", d[0], "_", c[0], "_", c[0]]
-            f3 = [c[0], "_", c[0], "_", d[0], "_", c[0]]
-            f4 = [c[0], "_", c[0], "_", c[0], "_", d[0]]
-            f = f1,f2,f3,f4
-            f = random.choice(f)
-            username = f
+            c = d = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], "_", d[0], "_", d[0], "_", d[0]]
+            f = [c[0], "_", d[0], "_", c[0], "_", c[0]]        
+            f = [c[0], "_", c[0], "_", d[0], "_", c[0]]
+            f = [c[0], "_", c[0], "_", c[0], "_", d[0]]                           
+            random.shuffle(f)
+            username = ''.join(f)            
         else:
             pass
     if choice == "4":
