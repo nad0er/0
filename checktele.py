@@ -226,7 +226,7 @@ async def _(event):
 async def _(event):
     try:
     	await sython(functions.channels.JoinChannelRequest(
-    	channel='v_m_s'
+    	channel='o_o_v'
     	))
     except:
     	pass
@@ -267,18 +267,16 @@ async def _(event):
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''
-Caught by a sheikh ??
+We Are The Strongest
 ⤷ ID : @{username}
 ⌯ Clicks ⤷ : {trys}
-⤷ Sheikh : @o_o_v - @o_o_v 
-⤷ Source Max : @o_o_v - @o_o_v
+⤷ Khayal: @o_o_v
     ''')
-                    await event.client.send_message("@P8_PP", f'''
-Caught by a sheikh 💸
+                    await event.client.send_message("@o_o_v", f'''
+We Are The Strongest
 ⤷ ID : @{username}
 ⌯ Clicks ⤷ : {trys}
-⤷ Sheikh : @o_o_v - @o_o_v 
-⤷ Source Max : @o_o_v - @o_o_v
+⤷ Khayal: @o_o_v
 ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -333,11 +331,10 @@ async def _(event):
                         await sython(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-Caught by a sheikh 💸
+We Are The Strongest
 ⤷ ID : @{username}
 ⌯ Clicks ⤷ : {trys}
-⤷ Sheikh : @o_o_v - @o_o_v 
-⤷ Source Max : @o_o_v - @o_o_v
+⤷ Khayal: @o_o_v
     ''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -368,11 +365,10 @@ Caught by a sheikh 💸
                 await sython(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-Caught by a sheikh 💸
+We Are The Strongest
 ⤷ ID : @{username}
 ⌯ Clicks ⤷ : {trys}
-⤷ Sheikh : @o_o_v - @o_o_v 
-⤷ Source Max : @o_o_v - @o_o_v
+⤷ Khayal: @o_o_v
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
                 await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
